@@ -136,7 +136,13 @@ class _HomePageState extends State<HomePage> {
               pLocation: data[kproductlocation],
             ));
           }
-
+         _products=[...products];
+          products.clear();
+          for (var product in _products) {
+            if (product.pCategory == kjackts) {
+              products.add(product);
+            }
+          }
           return GridView.builder(
             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: 2,
