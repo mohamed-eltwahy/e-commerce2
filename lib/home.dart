@@ -136,7 +136,7 @@ class _HomePageState extends State<HomePage> {
               pLocation: data[kproductlocation],
             ));
           }
-         _products=[...products];
+          _products=[...products];
           products.clear();
           for (var product in _products) {
             if (product.pCategory == kjackts) {
